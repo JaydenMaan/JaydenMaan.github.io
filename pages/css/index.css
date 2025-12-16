@@ -75,13 +75,6 @@ body {
 }
 
 
-.square:hover {
-    transform: scale(1.05);
-}
-
-.square2:hover {
-    transform: scale(1.05);
-}
 
 @media (max-width: 600px) {
     .grid {
@@ -191,6 +184,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+    background-color: #103586;
 }
 
 .box-link {
@@ -198,7 +192,8 @@ body {
     text-decoration: none;
     color: inherit;
 }
-.box-link:hover .square {
+.box-link:hover .square, 
+.box-link:hover .square2 {
     transform: scale(1.05);
     filter: brightness(1.1);
 }
