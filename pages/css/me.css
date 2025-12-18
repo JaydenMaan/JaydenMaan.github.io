@@ -25,13 +25,6 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.header2 {
-    text-align: center;
-    padding: 50px 20px 50px 20px;
-    font-size: 38px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-}
 
 .gridme {
     display: grid;
@@ -39,11 +32,11 @@ body {
     gap: 25px;
     padding: 40px;
     max-width: 900px;
-    /* height: 50px; */
+    height: 50px;
     margin: auto;
-    background: #1f1f1f;
-    justify-items: center;
+    background: #191919;
 }
+
 
 .square {
     background: rgb(64, 66, 141);
@@ -77,6 +70,14 @@ body {
     margin: 0 auto;
 }
 
+
+.square:hover {
+    transform: scale(1.05);
+}
+
+.square2:hover {
+    transform: scale(1.05);
+}
 
 @media (max-width: 600px) {
     .grid {
@@ -137,6 +138,7 @@ body {
 
 
 .footer {
+    width: 100%;
     padding: 30px;
     text-align: center;
     background: #222;
