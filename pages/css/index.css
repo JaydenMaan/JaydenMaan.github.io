@@ -102,7 +102,7 @@ body {
 }
 
 .box2 {
-    background-image: url("../img/highresbob.png"); 
+    background-image: url("../img/bob.png"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -199,11 +199,10 @@ body {
 }
 
 .footer {
-
-    padding: 300px;
+    padding: 30px;
     text-align: center;
     background: #222;
     color: white;
     font-size: 58px;
-    margin-top: 5000px;  /* pushes it away from content */
+    margin-top: 50px;  /* pushes it away from content */
 }

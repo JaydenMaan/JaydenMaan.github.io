@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #4c864c;
+
+}
+
+
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(39, 49, 136);
+}
+
+
+.gridme {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 40px;
+    max-width: 900px;
+    /* height: 50px; */
+    margin: auto;
+    background: #1f1f1f;
+    justify-items: center;
+}
+
+.header1 {
+    text-align: center;
+    padding: 500px 20px 50px 20px;
+    font-size: 38px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.header2 {
+    text-align: center;
+    padding: 50px 20px 50px 20px;
+    font-size: 38px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.bob {
+    text-align: center;
+    position: relative;  /* makes children position relative to this */
+    height: auto;   
+
+}
+.bgbob {
+    transform: scale(1.1);
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bobface {
+    position: absolute;  /* position on top of bg-image */
+    top: 55%;                 /* vertical center relative to container */
+    left: 48%;    
+    transform: translate(-50%, -50%) scale(0.6); /* centers & scales */
+    width: 30%;               /* foreground size relative to container */
+    height: auto;    
+}
+
+
+#slideshow {
+    border-radius: 12px;
+}
+
+.wake {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(28, 23, 104);
+}
+
+
+.footer {
+    padding: 30px;
+    text-align: center;
+    background: #222;
+    color: white;
+    font-size: 18px;
+    margin-top: 50px;  /* pushes it away from content */
+}
