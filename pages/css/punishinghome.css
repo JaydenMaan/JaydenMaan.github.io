@@ -12,13 +12,11 @@ body {
     padding: 60px 20px;
     font-size: 48px;
     font-weight: bold;
-    color: rgb(39, 49, 136);
+    color: rgb(0, 0, 0);
 }
 
 
 .gridme {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     padding: 40px;
     max-width: 900px;
@@ -26,6 +24,7 @@ body {
     margin: auto;
     background: #1f1f1f;
     justify-items: center;
+    color: beige;
 }
 
 .header1 {
@@ -45,26 +44,28 @@ body {
 }
 
 .bob {
-    text-align: center;
-    position: relative;  /* makes children position relative to this */
-    height: auto;   
-
+    position: relative;   /* absolute children are positioned relative to this */
+    text-align: center;   
+    width: 500px;         /* or 80% for responsive */
+    margin: 0 auto;       /* center container */
 }
+
 .bgbob {
-    transform: scale(1.1);
-    width: 100%;
+    width: 100%;        /* fills container */
     height: auto;
     display: block;
 }
 
+
+
 .bobface {
-    position: absolute;  /* position on top of bg-image */
-    top: 55%;                 /* vertical center relative to container */
-    left: 48%;    
+    position: absolute;
+    top: 30%;
+    left: 50%;
     transform: translate(-50%, -50%) scale(0.6); /* centers & scales */
-    width: 30%;               /* foreground size relative to container */
     height: auto;    
 }
+
 
 
 #slideshow {
@@ -72,12 +73,22 @@ body {
 }
 
 .wake {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    margin: 50px;
+    border-radius: 12px;
+    margin-top: 50px;
     height: 50px;
-    width: 50px;
-    background-color: rgb(28, 23, 104);
+    width: 150px;
+    background-color: rgb(0, 0, 85);
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.wakecage{
+    text-align: center;
+    width: 100%;
 }
 
 
