@@ -9,27 +9,40 @@ body {
 
 .header {
     text-align: center;
-    padding: 60px 20px;
+    padding: 10px 20px;
     font-size: 48px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: rgb(102, 25, 25);
+    background-color: #000000;
+    border-radius: 0 0 20% 20%;
+    box-shadow: 0px 7px 20px 5px rgb(45 13 13 / 40%);
+    border-color: #7e060634;
+    border-style: solid;
+    border-width: 0px 2px 22px 2px;
 }
 
 
-.gridme {
+.textbox {
     gap: 25px;
     padding: 40px;
     max-width: 900px;
     /* height: 50px; */
     margin: auto;
+    margin-top: 200px;
     background: #1f1f1f;
-    justify-items: center;
+    /* justify-items: center; */
     color: beige;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px 16px rgb(10 60 0 / 30%);
+}
+
+#center {
+    text-align: center;
 }
 
 .header1 {
     text-align: center;
-    padding: 500px 20px 50px 20px;
+    padding: 220px 20px 50px 20px;
     font-size: 38px;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -47,7 +60,10 @@ body {
     position: relative;   /* absolute children are positioned relative to this */
     text-align: center;   
     width: 500px;         /* or 80% for responsive */
-    margin: 0 auto;       /* center container */
+    margin: 70px auto;       /* center container */
+    box-shadow: inset 0px 0px 40px 0px rgba(0, 0, 0, 0.4);
+    padding: 50px 100px 36px 100px;
+    border-radius: 1%;
 }
 
 .bgbob {
@@ -60,7 +76,7 @@ body {
 
 .bobface {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.6); /* centers & scales */
     height: auto;    
@@ -84,7 +100,22 @@ body {
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
+    background: linear-gradient(to bottom, #06467e, #00184d);
+    box-shadow:
+        0 6px 0 #000000,      /* hard bottom edge */
+        0 14px 25px rgba(0,0,0,0.35); /* soft shadow */
+
+    transform: translateY(-2px);
+    transition: all 0.15s ease;
 }
+
+.wake:active {
+    transform: translateY(2px);
+    box-shadow:
+        0 2px 0 #001c30,
+        0 6px 12px rgba(0,0,0,0.3);
+}
+
 
 .wakecage{
     text-align: center;
