@@ -71,7 +71,7 @@
             <li>TensorFlow</li>
             </ul>
         </li>
-
+        <br>
         <li>
             Internet of Things (IoT)
             <ul>
@@ -79,7 +79,7 @@
             <li>IP cameras</li>
             </ul>
         </li>
-
+        <br>
         <li>
             Audio Processing
             <ul>
@@ -87,7 +87,7 @@
             <li>Speech to text</li>
             </ul>
         </li>
-
+        <br>
         <li>
             Artificial Intelligence
             <ul>
@@ -123,12 +123,11 @@
         <h2>Creating IOT devices for a more interactive experience.</h2>
 
         <p>
-            To make Bob more impactful I created some IoT devices. This is to amplify the feeling of losing control and being powerless.
-            You can see image [1/4], there is a photo of the thermostat I built, it has 2 buttons + and -. 
-            For this project it was just a screen that changes numbers and is remotely controllable to change the temperature. 
-            The whole device was designed and built from scratch (raspi pico 2W, cables, buttons, breadboard, firmware, case).   
+            To make Bob more impactfull I created some IOT devices. This is to amplify the feeling of losing control and being powerless.
+            You can see image[1/4] there a photo of the thermostat i build, it has 2 buttons + and -. 
+            For this project it was just a screen that changes numbers and is remotely controllable to change the tempature. 
+            The whole device was designed and build from scratch (raspi pico 2W, cables, buttons, breadboard, firmware, case).   
         </p>
-
         
         <!-- Slideshow container -->
         <div class="slideshow-container">
@@ -169,28 +168,28 @@
         <br>
         
         <p>
-            Image [2,3,4] are all of the same device. 
-            The doorbell was originally meant to capture a user's face and search a database to match a name and profession to it. 
-            Unfortunately this was too broad of a scope. 
-            We changed it to letting a user speak its name so that it could be sent to Bob for usage. 
+            Image[2,3,4] are all off the same device. 
+            The doorbell was originally ment to capture a users face and search a database to match a name and profession to it. 
+            Unfortunatly this was to broad of a scope. 
+            We changed it to letting a user speak its name so that could be send to Bob for usage. 
             In each image you see a different time in the process of creating the doorbell. The functionality of the doorbell is holding a button, 
-            speaking your name or speaking it in a sentence. The microphone inside the doorbell records the voice and sends it to a more beefy device. 
-            This beefy device makes use of a neural network which filters out the name and sends it to Bob to use.
+            speaking ur name or speaking it in a sentence. the microphone inside the doorbell records the voice and sends it to a more beefy device. 
+            This beefy device makes use of a neuralnet which filters out the name and sends it to Bob to use.
         </p>
 
-        <h2>Designing and creating the software for Bob to make it display emotions, be interactive and reachable on a network.</h2>
+
+        <h2>Designing and creating the software for bob to make it display emotions, be interactive and reachable on a network.</h2>
 
         <p>
-            During the design of Bob we wanted to make something simple but impactful. From past experiences I know that pixel art was the place for that.
+            During the design of Bob we wanted to make something simple but impactfull. From past experiences i know that pixelart was the place for that.
             It can deliver emotions and expressions while being easy to make and lightweight. The face of Bob needed to be able to do the following:  
         </p>
         <ul>
-            <li>Express the state of Bob (happy, sad, angry, sleep mode).</li>
-            <li>Be able to communicate with the AI agent over a network that is controlling the face to send text and change emotions.</li>
+            <li>Express the state of Bob (happy, sad, angry, sleepmode).</li>
+            <li>Be able to comunicate with the AI agent over a network that is controlling the face to send text and change emotions.</li>
             <li>Able to speak text out loud.</li>
-            <li>(Out of scope) Able to process speech.</li>
+            <li>(Out of scope)Able to process speech.</li>
         </ul>
-
 
         <div class="slideshow-container">
             
@@ -224,31 +223,30 @@
         </div>
         <br>
         <p>
-            In the images above there are different parts of the process. In image [1] you can see a sketch. 
-            This was at the start where we brought a bunch of different ideas.
-            We ran user tests and asked them to fill a form, asking which face and voice was the most fitting.
+            In the images above there are different parts of the process. In image[1] you can see a sketch. 
+            This was at the start where we brought a bunch of diffrent idea's.
+            We ran user test and asked them to fill a form, asking which face and voice was the most fitting.
         </p>
         <p>    
-            In image [2] are the tests of the right TTS being run in a remote notebook. 
+            In image[2] are the tests of the right TTS being run in a remote notebook. 
             We informed our stakeholders of the best 3 and made a decision.
         </p>
         <p>
-            Image 3 contains a small overview of the code structure. We decided to write the program in Python, because of its flexibility and wide level of available libraries. 
-            The face of Bob file contains 2 classes. One class constructs the environment, the other creates the face. 
-            When creating an object of the face class it inherits all the attributes of the environment. 
-            This means that it will build a whole application by simply calling one class.
-            To make this able to communicate with other devices we decided to run an API on a separate thread and allow memory to be shared between them. 
-            So it can be reached and send data remotely without the main application slowing down. 
+            Image 3 contains a small overview of the code scructure. We decided to write the program in python, because of its flexibility and wide level of available library's. 
+            The face of Bob file contains of 2 classes. 1 class to construct the environment, the other to create the face. 
+            When creating an object of the face class it ihearits all the attributes of the environment. 
+            This means that it will build a whole application by simply calling 1 class.
+            To make this be able to comunicate with other devices we decided to run a API on a seperate tread and allowing memory to be shared between them. 
+            So can it be reached and send data remotely without the main application slowing down. 
         </p>
 
-        <h2>Communication and planning.</h2>
+        <h2>Comunication and planning.</h2>
 
         <p>
-            Communication has played a vital part in the project. Actively communicating with the stakeholder and team kept the project on track. 
-            We implemented the scrum process as recommended by the school and worked in sprints. This project contained 5 sprints. Each sprint we discussed and assigned the coming tasks. 
-            We also regularly informed our stakeholder about the progress on the product and implemented any feedback or changes given.
+            Comunication has played a vital part in the project. Actively comunicating with the stakeholder and team kept the project on track. 
+            We implemented the scrum process as recomended by the school and worked in sprints. This project contained 5 sprints. Each sprint we discussed and assigned the coming tasks. 
+            We also regulary informed our stakeholder about the progress on the product and implemented any feedback or changes given.
         </p>
-
     </div>
     <!-- certificaten? -->
     <div class="textbox">
@@ -256,21 +254,21 @@
     <p>
         The result of our work was displayed at the exposition of the Darktech Studio at the HvA. 
         We made a room controlled by our system, "Bob",
-        whom you've probably already met at the top. Bob is the face of our Smart Home system.
+        whom you've probably already met at the top. Bob is the face of our Smart home system.
         
-        Giving it a face makes it more interactive for a user. After the experience, it’s not just a face; 
-        it’s a reminder of the dark side of technology, it gives something to blame... (unfinished)
+        
+        Giving it a face makes it more interactive for a user. After the experience, its not just a face 
+        its a reminder of the dark side of technology, it gives something to blame... (unfinished)
     </p>
-    <h2>Scenario</h2>
+    <h2>Senario</h2>
     <p>
         Here is how Bob works in a production environment. 
         Bob is an AI agent that constantly monitors. 
-        He has senses so he can hear, see, and feel. Bob can do what you give him. 
-        The more smart devices, the more control Bob can get. If Bob sees you open your fridge 5 times within 1 hour, 
+        He has senses so he can hear, see, feel, Bob can do what you give him. 
+        The more smart devices the more control Bob can get. If Bob sees you open ur fridge 5 times within 1 hour, 
         he will actively make a decision to shut the door to keep you from gaining weight. Showering for 1 hour? 
-        Bad for you! Bob knows best, of course, and decides to turn it off...
+        Bad for you! Bob knows best of course and decides to turn it off...
     </p>
-
 
     <p>I think you get concept now.</p>
 
