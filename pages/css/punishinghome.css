@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #4c864c;
+    background: #58635b;
+    transition: background 2s cubic-bezier(0.4, 0, 1, 1);
 
 }
 
@@ -83,11 +84,12 @@ body {
 .bob {
     position: relative;   /* absolute children are positioned relative to this */
     text-align: center;   
-    width: 750px;         /* or 80% for responsive */
-    margin: 70px auto;       /* center container */
+    width: 80rem;         /* or 80% for responsive */
+    margin: 4rem auto;       /* center container */
     box-shadow: inset 0px 0px 20px 2px rgba(0, 0, 0, 0.4);
-    padding: 50px 100px 36px 100px;
-    border-radius: 1%;
+    padding: 4rem 0rem 3rem 0rem;
+    border-radius: 0rem;
+    transition: width 3s ease, height 1s ease, transform 0.5s ease;
 }
 
 .bgbob {
@@ -100,7 +102,7 @@ body {
 
 .bobface {
     position: absolute;
-    top: 35%;
+    top: 15rem;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.6); /* centers & scales */
     height: auto;    
@@ -124,9 +126,9 @@ body {
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
-    background: linear-gradient(to bottom, #06467e, #00184d);
+    background: linear-gradient(to bottom, #31722d, #1f8d04);
     box-shadow:
-        0 6px 0 #000000,      /* hard bottom edge */
+        0 6px 0 #4b4b4b,      /* hard bottom edge */
         0 14px 25px rgba(0,0,0,0.35); /* soft shadow */
 
     transform: translateY(-2px);
@@ -306,4 +308,23 @@ body {
 .sidebutton:hover {
     transform: scale(1.45);
     filter: brightness(1.2);
+}
+
+#talkBox {
+    display: none;            /* hidden by default */
+    max-width: 400px;
+    margin: 20px auto 0 auto;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    font-family: 'Courier New', monospace;  /* gives “dialog” feel */
+    text-align: left;
+    line-height: 1.4;
+    position: relative;
+    overflow: hidden;
+    border-width: .45rem;
+    border-style:ridge;
+    border-color: #4e9b48;
 }
