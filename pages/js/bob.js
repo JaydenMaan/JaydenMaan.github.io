@@ -65,7 +65,7 @@ function talkMode() {
     const message1 = "Hello! My name is Bob, Nice to meet you! ";
     const message2 = "Im a smart home assistant. Tasked to protect you! ";
     const message3 = "With my many sensors and data i can find the optimal way of keeping you safe. "
-    const message4 = "I have detected that i am in based in a browser, adjusting to optimal size and standarts. . . . . . . "
+    const message4 = "I have detected that i am in based in a browser, adjusting to optimal size and standards. . . . . . . "
     const message5 = "Succes! ";
     const message6 = "Anyways have fun reading, im keeping my eye on you ";
 
