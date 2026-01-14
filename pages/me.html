@@ -9,46 +9,82 @@
 
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="css/me.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
-    <div class="header">About Me</div>
+    <div class="header">
+        About Me
+    </div>
 
-    <div class="header1">.</div>
+    <div class="header pos1">
+        Me
+    </div>
     <div class="textbox">
-        <h1 id="center">Me</h1>
-        <p id="center">¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸.·´¯`·.¸</p>
-        <p><br></p>
-        <p>
-            hobbies:
-            projects
-            gaming
+    <p><br></p>
+    <p>
+        hobbies:
+        projects
+        gaming
+        gym
+        learning 
 
-        </p>
+    </p>
+    </div>
     </div> <!-- spelling? -->
-    <div class="header1">My Experience</div>
     <!-- certificaten? -->
-    <div class="gridme">
-        <img src="https://tryhackme-badges.s3.amazonaws.com/jaydenmaanjm.png" alt="Your Image Badge" />
-    </div>
-    <div class="header2">Skills</div>
+    <div class="header pos2">My Experience</div>
+    <div class="textbox">
+        <div class="gridme">
+            <!-- <img src="https://tryhackme-badges.s3.amazonaws.com/jaydenmaanjm.png" alt="Your Image Badge" /> -->
+            <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2910842" style='border:none;'></iframe>
+            <a href="https://www.linkedin.com/in/jayden-m-8500ab267/">
+                <div class="linkedin">
+                    <img src="img/Linkedin-Logo.png">
+                    <!-- <div class="wake">wake</div> -->    
+                </div>
+            </a>
+        </div>
+
     <!-- dingen waarmee ik werk: tools, programeer talen, bezonderheden -->
-    <div class="gridme">
-        <span>Python ***-- 3/5</span>
-        <span>html&css&js **--- 2/5</span>
-        <span>tools?</span>
-        <span>metasploit</span>
-        <span>nmap</span>
-        <span>dirbusters</span>
-        <span>linux ? bash?</span>
-        <span>powershell</span>
-        <span>tryhackme stuff</span>
+    
+        <h2 class="grid-title">Skills</h2>
+        <div class="gridme"> 
+            <span>Python</span>
+            <span>html-css-js</span>
+            <span>metasploit</span>
+            <span>nmap</span>
+            <span>dirbusters</span>
+            <span>linux</span>
+            <span>bash scripting</span>
+            <span>powershell scripting</span>
+            <span></span>
+        </div>
+    </div>
+    <div class="header pos3">Hobbies</div>
+    <div class="textbox">
+        <a href="https://steamcommunity.com/profiles/76561198275067794/">
+            <div class="steam">
+                <img src="img/steam.png">
+            </div>
+        </a>
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="../">Home</a>
     </div>
 
-    
-    <div class="header2">Hobbies</div>
-    
+    <!-- Use any element to open the sidenav -->
+    <div class="sidebutton" onclick="openNav()"><h1>menu</h1></div>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+    ...
+    </div>
+
+
     <footer class="footer">
     </footer>
-
+    <script src="js/me.js"></script>
 </body>
 </html>
