@@ -132,12 +132,12 @@
 
         
         <!-- Slideshow container -->
-        <div class="slideshow-container">
+        <div class="slideshow-container" onclick="expandpic(event)">
             
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
                 <div class="numbertext">1 / 4</div>
-                <img src="img/thephome/thermo.jpg" style="width:50%">
+                <img src="img/thephome/thermo.jpg" style="width:40%">
                 <div class="text">Thermostat</div>
             </div>
             
@@ -163,7 +163,9 @@
             </div>
             
             
-            <!-- Next and previous buttons -->
+        </div>
+        <!-- Next and previous buttons -->
+        <div class="buttons">
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
@@ -193,7 +195,7 @@
         </ul>
 
 
-        <div class="slideshow-container">
+        <div class="slideshow-container" onclick="expandpic(event)">
             
             <!-- Full-width images with number and caption text -->
             <div class="mySlides2 fade">
@@ -220,8 +222,10 @@
             
             
             <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+            <div class="buttons">
+                <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+            </div>
         </div>
         <br>
         <p>
@@ -295,8 +299,14 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="../">Home</a>
     </div>
+    <div id="overlay" class="img-overlay" style="display: none;"></div>
+    <div id="zoomedImageContainer"></div>
+
+
     <div class="sidebutton" onclick="openNav()"><h1>menu</h1></div>
     <script src="js/me.js"></script>
     <script src="js/bob.js"></script>
+    <script src="js/expandimg.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
