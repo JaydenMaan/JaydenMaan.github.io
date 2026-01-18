@@ -7,7 +7,7 @@ function expandpic(event) {
     zoomContainer.innerHTML = "";
 
     // Find currently visible slide
-    const visibleSlide = container.querySelector(".mySlides[style*='display: block'], .mySlides2[style*='display: block']");
+    const visibleSlide = container.querySelector(".mySlides[style*='display: block'], .mySlides2[style*='display: block'], .mySlides3[style*='display: block']");
     if (!visibleSlide) return;
 
     // Copy all images in that slide
