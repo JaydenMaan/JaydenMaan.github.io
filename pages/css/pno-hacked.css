@@ -29,11 +29,12 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
+
     list-style: none;
 }
 
 .gridme > li {
-    background: rgba(255, 255, 255, 0.377); /* optional */
+    background: rgba(143, 143, 143, 0.082); /* optional */
     padding: 1rem;
     border-radius: 8px;
 }
