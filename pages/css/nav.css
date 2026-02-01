@@ -21,7 +21,6 @@
   display: block;
   transition: 0.3s;
   text-align: center;
-  background-color: #52525229;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -55,13 +54,13 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 10rem;
+    width: 8rem;
     height: 3rem;
-    border-radius: 0% 0% 14% 0%;
-    background-color: #0000002e;
+    border-radius: 0% 0% 5% 0%;
+    background-color: #000000;
     color: beige;
     font-family: Geneva, Verdana, sans-serif;
-    transition: 1s;
+    transition: .1s;
     align-items: stretch;
     justify-content: center;
 }
@@ -71,6 +70,6 @@
 }
 
 .sidebutton:hover {
-    transform: scale(1.45);
-    filter: brightness(1.2);
+    transform: scale(1.01);
+    filter: brightness(1.5);
 }

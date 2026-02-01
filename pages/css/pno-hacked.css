@@ -2,8 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #58635b;
-    transition: background 2s cubic-bezier(0.4, 0, 1, 1);
+    background: #000aff8a;
+    /* transition: background 2s cubic-bezier(0.4, 0, 1, 1); */
 
 }
 
@@ -13,13 +13,13 @@ body {
     padding: 10px 20px;
     font-size: 48px;
     font-weight: bold;
-    color: rgb(102, 25, 25);
-    background-color: #000000;
-    border-radius: 0 0 20% 20%;
-    box-shadow: 0px 7px 20px 5px rgb(144, 0, 0);
-    border-color: #7e060634;
-    border-style: solid;
-    border-width: 0px 2px 8px 2px;
+    color: rgba(0, 0, 0, 0.747);
+    /* background-color: #003a9291; */
+    border-color: #362784c9;
+    border-style: dashed;
+    border-top-style: solid;
+    border-width: 1rem 7rem 2rem 7rem;
+    box-shadow: inset 0px 20px 12px 10px rgb(10 60 0 / 30%);
 }
 
 .gridme {
@@ -49,11 +49,11 @@ body {
 .textbox {
     gap: 25px;
     padding: 40px;
-    max-width: 900px;
+    max-width: 80rem;
     /* height: 50px; */
     margin: auto;
     margin-top: 200px;
-    background: #1f1f1f;
+    background: #0f271fd9;
     /* justify-items: center; */
     color: beige;
     border-radius: 20px;
