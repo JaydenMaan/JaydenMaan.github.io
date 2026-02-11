@@ -115,7 +115,7 @@ body {
     background: rgb(236 236 236);
     border-radius: .5rem;
     align-items: center;
-    width: 20rem;
+    /* width: 20rem; */
     height: 5rem;
 }
 
@@ -143,11 +143,15 @@ body {
 
 
 .footer {
-    width: 100%;
+    /* width: 100%; */
     padding: 30px;
     text-align: center;
     background: #222;
     color: white;
     font-size: 18px;
     margin-top: 50px;  /* pushes it away from content */
+}
+
+.gridme iframe {
+    width: 100%;
 }
