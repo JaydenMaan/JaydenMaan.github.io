@@ -160,10 +160,39 @@
             This image does not provide all information but you can see the protocol http being used no a non private ipadress. 
             This ringed bells and i discussed it. After looking further into the IP adress there has been multiple connections made from that source IP adress.
             Most importantly, a download had been made from the same IP. the conclusion in here was that a succesful phising attack was conducted, wich convinced the user
-            to download a executable named "Update tool". This is most likely a mix of Trojan and infostealer. since the actual malware was not trying to hide its intentions
+            to download a executable named "Update tool". This is most likely a mix of Trojan and infostealer. since the actual malware was not trying to hide its intentions 
+            but had a userfriendly name that would fool most not technical users.  
 
         </p>
+
+        <p>
+            The malware was found on the device. Here we extracted it using Autopsy. !!!!!!!!!!!!autopsy!!!!!!!!!!!
+            We searched for the name of the suspicious download and found the file.
+            We anaysed the file using Ghidra and IDA Free 9.0. After some time we found out that it was an info stealer. 
+            It searched common filestructures(browser files/local directoy's) and extracted private RSA key's. !!!!!!!!!!!!!!!malware sample!!!!!!!!!!!!!!!!`
+            It first encrypted all the information and then send it To a C2 server.
+        </p>
+
+        <P>
+            For the timeline we made good use of autopsy's features. Autopsy has a build in timeline feature wich helped us give the big picture.
+            After some filtering of redundant or useless information we created a clear timeline and reconstructed the attack. Here the attack happend trough Email.
+            The user was fooled by a update email. The user installed the Application and it ran. 
+        </P>
         
+        <h2>Ethical evaluation:</h2>
+        <p>
+            Deontology
+            Care Ethics
+            Conswquentialism
+        </p>
+        <h2>Risk analysis:</h2>
+        <p>b</p>
+        <h2>Advisory report:</h2>
+        <p>c</p>
+        <h2>Technical design:</h2>
+        <p>d</p>
+        <h2>(extra) Research paper:</h2>
+        <p>e</p>
         <!-- <div class="slideshow-container" onclick="expandpic(event)">
             
             <div class="mySlides fade">
