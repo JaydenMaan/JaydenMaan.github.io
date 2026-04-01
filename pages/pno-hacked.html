@@ -155,7 +155,7 @@
             I was tasked with researching the artifacts of the affected PC. The artifacts contained of: Disk image, Memory dump, pcap file.
             Here i swiftly found inside the pcap file suspicious traffic. 
         </p>
-        <img src="img/wiresharkbevinding.png" width="70%"> 
+        <img src="img/pno/wiresharkbevinding.png" width="100%"> 
         <p>
             This image does not provide all information but you can see the protocol http being used no a non private ipadress. 
             This ringed bells and i discussed it. After looking further into the IP adress there has been multiple connections made from that source IP adress.
@@ -164,7 +164,8 @@
             but had a userfriendly name that would fool most not technical users.  
 
         </p>
-
+        <h3>autopsy sample of infected disk:</h3>
+        <img src="img/pno/janeimage.png" width="100%">
         <p>
             The malware was found on the device. Here we extracted it using Autopsy. !!!!!!!!!!!!autopsy!!!!!!!!!!!
             We searched for the name of the suspicious download and found the file.
@@ -172,21 +173,33 @@
             It searched common filestructures(browser files/local directoy's) and extracted private RSA key's. !!!!!!!!!!!!!!!malware sample!!!!!!!!!!!!!!!!`
             It first encrypted all the information and then send it To a C2 server.
         </p>
+        <h3>malware sample that was used in the attack:</h3>
+        <img src="img/pno/ida_updatetool.png" width="100%"> 
+        
 
         <P>
             For the timeline we made good use of autopsy's features. Autopsy has a build in timeline feature wich helped us give the big picture.
             After some filtering of redundant or useless information we created a clear timeline and reconstructed the attack. Here the attack happend trough Email.
-            The user was fooled by a update email. The user installed the Application and it ran. 
+            The user was fooled by a update email. The user installed the Application and it was executed on the device, extracting information and sending it to a server.
+             
         </P>
         
         <h2>Ethical evaluation:</h2>
         <p>
-            Deontology
-            Care Ethics
-            Conswquentialism
+            Ethics are an important field in cybersecurity. It helps us think about the choices we make and the consequences of those choices.
+            In this project i was required to study different type of ethics, put myself the vicim in the position, and describe what actions each ethical perspective would do.
+            For the ethical evaluation, I chose three ethical theories: Deontological Ethics, Care Ethics, and Consequentialism.
+        </p>
+        <p>
+            I learned important skills from this. Ethics give me a way to think from diffrent persepectives and mindset.
+            Thanks to this i can make important choices and have a foundation for moments where i could be placed in difficult situations 
         </p>
         <h2>Risk analysis:</h2>
-        <p>b</p>
+        <p>
+            To determine the assets. We held interviews with the stakeholders regarding the crown juwels. Here we catogorised the most importand machines and information 
+            Determine assets, threats and risks
+            Write report
+        </p>
         <h2>Advisory report:</h2>
         <p>c</p>
         <h2>Technical design:</h2>
