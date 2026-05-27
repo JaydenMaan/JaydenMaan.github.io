@@ -84,7 +84,7 @@ body {
     text-align: center;   
     margin: 4rem auto;       /* center container */
     box-shadow: inset 0px 0px 20px 2px rgba(0, 0, 0, 0.4);
-    padding: 4rem 0rem 3rem 0rem;
+    padding: 2rem 0rem 2rem 0rem;
     border-radius: 0rem;
     transition: width 3s ease, height 1s ease, transform 0.5s ease;
 }
@@ -99,7 +99,7 @@ body {
 
 .bobface {
     position: absolute;
-    top: 15rem;
+    top: 13rem;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.6); /* centers & scales */
     height: auto;    
